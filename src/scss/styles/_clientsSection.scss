@@ -1,0 +1,124 @@
+// CLIENTS section styles
+.clients-section {
+  &-orange-dot {
+    left: 44px;
+    top: -18px;
+
+    @media (min-width:768px) {
+      left: 79px;
+      top: 30px;
+    }
+
+    @media (min-width:1440px) {
+      left: 163px;
+      top: 30px;
+    }
+
+    @media (min-width:1920px) {
+      left: 240px;
+      top: 30px;
+    }
+  }
+
+  &-violet-rectangle {
+    right: 70px;
+    top: -64px;
+
+    @media (min-width:1920px) {
+      right: 151px;
+      top: -72px;
+    }
+  }
+
+  &-header {
+    &-heading {
+      color: $heading-color;
+      font-size: 30px;
+
+      @media (min-width: 1024px) {
+        font-size: 40px;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 45px;
+      }
+
+      @media (min-width: 1920px) {
+        font-size: 55px;
+      }
+    }
+
+    &-text {
+      color: $text-color-8;
+      max-width: 500px;
+
+      @media (min-width: 1440px) {
+        font-size: 17px;
+      }
+    }
+  }
+
+  &-carousel {
+    &-indicators {
+      &-button {
+        padding: 0 10px;
+        width: 7px !important;
+        height: 7px !important;
+        border-radius: 50%;
+        background-color: $violet-color !important;
+      }
+    }
+
+    &-inner {
+      .clients-carousel-item {
+        padding: 0 10px 64px 10px;
+
+        .carousel-card {
+          max-width: 569px;
+          padding: 20px;
+          border: 1px solid #efefef;
+
+          &:hover {
+            cursor: pointer;
+            box-shadow: 0 34px 50px -17px #02160510;
+            border-color: white;
+            transition: all 0.3s ease-in-out 0.3s;
+          }
+
+          @media (min-width: 1440px) {
+            padding: 31px 49px 33px 27px;
+          }
+
+          &-wrapper {
+            padding: 10px;
+
+            @media (min-width: 1440px) {
+              padding: 0;
+            }
+
+            &-background {
+              width: 107px;
+            }
+
+            &-text {
+              font-size: 17px;
+              max-width: 450px;
+            }
+
+            &-profile {
+              font-size: 12px;
+
+              &-name {
+                color: $heading-color;
+              }
+
+              &-text {
+                color: $text-color-8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+// PLANS section styles
+.plans-section {
+  background-color: $bg-gray-color;
+
+  &-violet-rectangle {
+    left: 30px;
+  }
+
+  &-green-rectangle {
+    bottom: -38px;
+    left: 135px;
+
+    @media (min-width: 1440px) {
+      left: 285px;
+    }
+
+    @media (min-width: 1920px) {
+      left: 495px;
+    }
+  }
+
+  &-header {
+    &-heading {
+      font-size: 30px;
+
+      @media (min-width: 1024px) {
+        font-size: 35px;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 45px;
+      }
+
+      @media (min-width: 1920px) {
+        font-size: 55px;
+      }
+    }
+
+    &-text {
+      color: $text-color-8;
+
+      @media (min-width: 1920px) {
+        font-size: 17px;
+      }
+    }
+  }
+
+  &-container {
+    margin: 45px 0;
+
+    .container-card {
+      border-radius: 4px;
+      width: 310px;
+      background-color: white;
+
+      &:hover {
+        cursor: pointer;
+        scale: 1.02;
+        box-shadow: 0 26px 42px 0 #02160508;
+        transition: all 0.4s ease-in-out;
+      }
+
+      @media (min-width: 1440px) {
+        &::after {
+          content: url(/src/images/design/maskBackground.png);
+          position: absolute;
+          top: -10%;
+          z-index: -1;
+          opacity: 0;
+        }
+
+        &:hover {
+          scale: 1.001;
+
+          &::after {
+            opacity: 100%;
+            transition: all 0.4s linear;
+          }
+
+          &:hover *:not(button) {
+            color: white;
+            transition: all 0.4s ease-in-out;
+          }
+
+          &:hover button {
+            border-color: $yellow-color;
+            color: white;
+          }
+        }
+      }
+
+      @media (min-width: 768px) {
+        width: 320px;
+      }
+
+      @media (min-width: 1440px) {
+        width: 340px;
+      }
+
+      &-heading {
+        color: $violet-color;
+
+        @media (min-width: 1440px) {
+          padding-bottom: 16px;
+        }
+
+        @media (min-width: 1920px) {
+          font-size: 22px;
+        }
+      }
+
+      &-title {
+        font-size: 26px;
+        color: $heading-color;
+
+        @media (min-width: 1024px) {
+          font-size: 40px;
+        }
+
+        @media (min-width: 1440px) {
+          font-size: 45px;
+          padding-bottom: 18px;
+        }
+
+        @media (min-width: 1920px) {
+          font-size: 49px;
+        }
+
+        &-sup {
+          font-size: 16px;
+          vertical-align: super;
+        }
+
+        &-sub {
+          font-size: 15px;
+        }
+      }
+
+      &-content {
+        &-item {
+          color: $text-color-8;
+
+          @media (min-width: 1920px) {
+            font-size: 17px;
+          }
+        }
+      }
+
+      &-button {
+        padding: 8px 18px;
+        border-radius: 4px;
+        border: 1px solid $heading-color;
+        color: $heading-color;
+
+        @media (min-width: 1440px) {
+          padding: 10px 21px;
+        }
+
+        @media (min-width: 1920px) {
+          padding: 11.5px 23px;
+        }
+
+        &:hover {
+          box-shadow: none;
+          outline: none;
+          color: black !important;
+          border-color: $yellow-color;
+          background-color: $yellow-color;
+          transition: all 0.1s linear;
+        }
+      }
+    }
+  }
+}

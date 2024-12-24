@@ -1,0 +1,166 @@
+//SPEED section styles
+.speed-section {
+    @media (min-width:1024px) {
+        padding: 10px 33px;
+    }
+
+    @media (min-width:1440px) {
+        padding: 10px 0 0 50px;
+    }
+
+    &-orange-dot {
+        left: 20px;
+        top: 10px;
+
+        @media (min-width:1024px) {
+            left: 50px;
+            top: -5px;
+        }
+
+        @media (min-width:1440px) {
+            left: 140px;
+            top: 65px;
+        }
+
+        @media (min-width:1920px) {
+            left: 250px;
+            top: 89px;
+        }
+    }
+
+    &-violet-rectangle {
+        top: 30px;
+        right: 23px;
+
+        @media (min-width:1024px) {
+            top: 0px;
+            right: 103px;
+        }
+    }
+
+    &-green-rectangle {
+        bottom: -35px;
+        right: 50px;
+
+        @media (min-width:1024px) {
+            bottom: -38px;
+            right: 240px;
+        }
+
+        @media (min-width:1920px) {
+            bottom: -41px;
+            right: 171px;
+        }
+    }
+
+    &-content {
+        .content-header {
+            &-heading {
+                color: $heading-color;
+                font-size: 30px;
+
+                @media (min-width:1024px) {
+                    font-size: 35px;
+                }
+
+                @media (min-width:1440px) {
+                    font-size: 45px;
+                }
+
+                @media (min-width:1920px) {
+                    font-size: 55px;
+                }
+
+                &-part {
+                    color: $violet-color;
+                }
+            }
+
+            &-para {
+                color: $text-color-8;
+                width: 250px;
+
+                @media (min-width:768px) {
+                    width: 600px;
+                }
+
+                @media (min-width:1920px) {
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .content-form {
+            @media (min-width:1440px) {
+                width: 711px;
+            }
+
+            @media (min-width:1920px) {
+                width: 728px;
+            }
+
+            &-field {
+                @media (min-width:1440px) {
+                    width: 550px;
+                }
+
+                @media (min-width:1920px) {
+                    width: 577px;
+                }
+
+                &-input {
+                    background-color: $input-bg-color;
+                    width: 260px;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &::placeholder {
+                        color: #B6B6B6;
+                    }
+
+                    @media (min-width:1440px) {
+                        width: 50%;
+                    }
+                }
+            }
+
+            &-button {
+                background-color: $yellow-color;
+                border: none;
+                border-radius: 2.48px;
+
+                &:hover {
+                    box-shadow: none;
+                    outline: none;
+                    background-color: $yellow-color-hover;
+                }
+
+                @media (min-width:1440px) {
+                    padding: 14px 29px;
+                }
+
+                @media (min-width:1920px) {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    &-image {
+        width: 280px;
+
+        @media (min-width:1024px) {
+            width: 342px;
+        }
+
+        @media (min-width:1440px) {
+            width: 600px;
+        }
+
+        @media (min-width:1920px) {
+            width: 794px;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+//FOOTER section styles
+.footer-section {
+  padding: 16px;
+
+  @media (min-width: 1440px) {
+    padding: 120px 20px 5px;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 150px 20px 5px;
+  }
+
+  &-logo {
+    font-size: 30px;
+    color: $heading-color;
+
+    &-bullet {
+      color: #bc424e;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 36px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 40px;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 44.42px;
+    }
+  }
+
+  &-list {
+    &-item {
+      list-style: none;
+      text-decoration: none;
+      color: $heading-color;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 18px;
+        padding: 0 10px;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 20px;
+        padding: 0 15px;
+      }
+    }
+  }
+
+  &-ruler {
+    color: #eae5e5;
+    width: 92%;
+    font-weight: 500;
+  }
+
+  &-content {
+    color: $text-color-8;
+    font-size: 13px;
+    gap: 10px 30px;
+
+    @media (min-width: 768px) {
+      gap: 70px;
+    }
+
+    @media (min-width: 1024px) {
+      gap: 250px;
+    }
+
+    @media (min-width: 1440px) {
+      gap: 580px;
+    }
+
+    @media (min-width: 1920px) {
+      gap: 944px;
+    }
+
+    &-list {
+      &-item {
+        text-decoration: none;
+        color: $text-color-8;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        @media (min-width: 768px) {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}

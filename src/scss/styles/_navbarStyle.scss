@@ -1,0 +1,130 @@
+// Navbar section styles
+.navbar-section-container {
+  .navbar-logo {
+    .navbar-logo-bullet {
+      color: #bc424e;
+    }
+  }
+
+  .hamburger-button {
+    border: none;
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  .navbar-list-wrapper {
+    @media (min-width: 1024px) {
+      gap: 16px;
+    }
+
+    @media (min-width: 1440px) {
+      gap: 56px;
+    }
+
+    @media (min-width: 1920px) {
+      gap: 162px;
+    }
+
+    .navbar-list {
+      @media (min-width:992px) {
+        gap: 20px;
+      }
+
+      @media (min-width:1440px) {
+        gap: 38px;
+      }
+
+      @media (min-width:1440px) {
+        gap: 56px;
+      }
+
+      .navbar-list-item {
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: $violet-color;
+          bottom: 0;
+          left: 0;
+          border-radius: 2px;
+          width: 0;
+          height: 2.5px;
+          transition: all 0.3s ease-in-out 0.3s;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $violet-color;
+          bottom: 0;
+          right: 0;
+          border-radius: 2px;
+          width: 0;
+          height: 2.5px;
+          transition: all 0.3s ease-in-out 0.3s;
+        }
+
+        @media (min-width: 992px) {
+          &:hover::before {
+            width: 73%;
+          }
+
+          &:hover::after {
+            width: 20%;
+          }
+        }
+
+        @media (min-width: 1440px) {
+          font-size: 20px;
+        }
+
+        @media (min-width: 1920px) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .navbar-button {
+      border-radius: 2px;
+      border: 2px solid $heading-color;
+      padding: 8px 21px;
+
+      @media (min-width:1024px) {
+        padding: 10px 24px;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 20px;
+        padding: 12px 30px;
+      }
+
+      @media (min-width: 1920px) {
+        font-size: 24px;
+        padding: 17px 47px;
+      }
+    }
+
+    .navbar-button-search {
+      background-color: $yellow-color;
+      border-radius: 1px;
+      border: none;
+
+      &:hover {
+        box-shadow: none;
+        outline: none;
+        background-color: $yellow-color-hover;
+      }
+
+      @media (min-width: 1440px) {
+        width: 60px;
+      }
+
+      @media (min-width: 1920px) {
+        width: 83px;
+      }
+    }
+  }
+}

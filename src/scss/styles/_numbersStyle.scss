@@ -1,0 +1,68 @@
+//NUMBERS section styles
+.numbers-section {
+    &-container {
+        border: 1px solid #E1E1E1;
+        border-radius: 2px;
+        width: 290px;
+
+        @media (min-width:768px) {
+            width: 740px;
+        }
+
+        @media (min-width:1024px) {
+            width: 900px;
+        }
+
+        @media (min-width:1440px) {
+            width: 1100px;
+        }
+
+        @media (min-width:1920px) {
+            width: 1165px;
+        }
+
+        .container-card {
+            margin: 20px 0;
+            width: 120px;
+
+            @media (min-width:768px) {
+                width: 160px;
+            }
+
+            @media (min-width:1024px) {
+                margin: 20px 10px;
+            }
+
+            @media (min-width:1440px) {
+                margin: 30px 0;
+            }
+
+            @media (min-width:1920px) {
+                width: 172px;
+                margin: 35px 10px;
+            }
+
+            &-heading {
+                font-size: 32px;
+                color: #666565;
+
+                @media (min-width:1024px) {
+                    font-size: 40px;
+                }
+
+                @media (min-width:1920px) {
+                    font-size: 73px;
+                }
+            }
+
+            &-text {
+                color: #6F6F6F;
+
+                @media (min-width:1920px) {
+                    font-size: 17px;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,173 @@
+//NEED section styles
+.need-section {
+  &-green-rectangle {
+    top: 5px;
+    left: 32px;
+
+    @media (min-width: 768px) {
+      left: 150px;
+    }
+
+    @media (min-width: 1024px) {
+      top: 110px;
+      left: 80px;
+    }
+  }
+
+  &-orange-dot {
+    top: 153px;
+    left: 250px;
+
+    @media (min-width: 768px) {
+      left: 678px;
+    }
+
+    @media (min-width: 1024px) {
+      left: 410px;
+      top: 500px;
+    }
+
+    @media (min-width: 1440px) {
+      left: 580px;
+      top: 560px;
+    }
+
+    @media (min-width: 1920px) {
+      left: 685px;
+      top: 719px;
+    }
+  }
+
+  &-image {
+    width: 270px;
+
+    @media (min-width: 768px) {
+      width: 380px;
+    }
+
+    @media (min-width: 1024px) {
+      width: 530px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 670px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: 1920px) {
+      width: 771px;
+      padding-right: 50px;
+    }
+  }
+
+  &-details {
+    &-header {
+      &-heading {
+        color: $heading-color;
+        font-size: 30px;
+
+        .heading-part {
+          color: $violet-color;
+        }
+
+        @media (min-width: 1440px) {
+          font-size: 45px;
+        }
+
+        @media (min-width: 1920px) {
+          font-size: 55px;
+        }
+      }
+
+      &-para {
+        color: $text-color-8;
+        width: 258px;
+        margin: auto;
+
+        @media (min-width: 768px) {
+          width: 572px;
+        }
+
+        @media (min-width: 1024px) {
+          width: 450px;
+        }
+
+        @media (min-width: 1440px) {
+          width: 630px;
+          padding-bottom: 30px;
+        }
+
+        @media (min-width: 1920px) {
+          font-size: 17px;
+          width: 720px;
+          margin-left: 0;
+          padding-top: 36px;
+        }
+      }
+    }
+
+    &-container {
+      .container-card {
+        width: 310px;
+        border-radius: 4px;
+
+        &:hover {
+          cursor: pointer;
+          scale: 1.02;
+          box-shadow: 5px 25px 37px 0 #02160510;
+          transition: all 0.3s ease-in-out 0.3s;
+        }
+
+        @media (min-width: 768px) {
+          width: 360px;
+        }
+
+        @media (min-width: 1024px) {
+          width: 386px;
+        }
+
+        @media (min-width: 1440px) {
+          width: 534px;
+          gap: 10px;
+        }
+
+        @media (min-width: 1920px) {
+          width: 600px;
+          gap: 28px;
+        }
+
+        &-image {
+          width: 70px;
+
+          @media (min-width: 1920px) {
+            width: 101px;
+          }
+        }
+
+        &-body {
+          &-header {
+            color: $heading-color;
+
+            @media (min-width: 1920px) {
+              font-size: 23px;
+            }
+          }
+
+          &-text {
+            color: $text-color-8;
+            width: 268px;
+
+            @media (min-width: 1440px) {
+              width: 381px;
+            }
+
+            @media (min-width: 1920px) {
+              font-size: 17px;
+              width: 405px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

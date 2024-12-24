@@ -1,0 +1,420 @@
+// HERO section styles
+.hero-section {
+    @media (min-width:1440px) {
+        margin-top: 40px;
+    }
+
+    @media (min-width:1920px) {
+        margin-top: 60px;
+    }
+
+    .hero-details {
+        @media (min-width:768px) {
+            width: 50%;
+        }
+
+        @media (min-width:1024px) {
+            padding-left: 24px;
+        }
+
+        @media (min-width:1440px) {
+            padding-left: 53px;
+        }
+
+        @media (min-width:1920px) {
+            padding-top: 10px;
+        }
+
+        .hero-details-green-rectangle {
+            top: -308px;
+            left: 21px;
+
+            @media (min-width:768px) {
+                top: 12px;
+            }
+
+            @media (min-width:1024px) {
+                top: -9px;
+            }
+
+            @media (min-width:1920px) {
+                top: -120px;
+            }
+        }
+
+        .hero-details-orange-dot {
+            right: 82px;
+            top: -16px;
+
+            @media (min-width:1440px) {
+                top: 8px;
+            }
+
+            @media (min-width:1920px) {
+                top: -125px;
+            }
+        }
+
+        .hero-details-violet-rectangle {
+            left: 54px;
+            top: -166px;
+
+            @media (min-width:768px) {
+                left: 298px;
+                top: 424px;
+            }
+
+            @media (min-width:1024px) {
+                left: 376px;
+                top: 526px;
+            }
+
+            @media (min-width:1440px) {
+                left: 500px;
+                top: 494px;
+            }
+
+            @media (min-width:1920px) {
+                left: 690px;
+                top: 632px;
+            }
+        }
+
+        .hero-details-header {
+            width: 320px;
+
+            @media (min-width:1024px) {
+                width: 450px;
+            }
+
+            @media (min-width:1440px) {
+                width: 539px;
+            }
+
+            @media (min-width:1920px) {
+                width: 778px;
+            }
+
+            .details-header-prefix {
+                width: 40px;
+                left: 10px;
+                bottom: 45px;
+
+                @media (min-width:768px) {
+                    left: -4px;
+                    bottom: 45px;
+                }
+
+                @media (min-width:1024px) {
+                    width: 68px;
+                    left: -15px;
+                    bottom: 70px;
+                }
+
+                @media (min-width:1440px) {
+                    width: 85px;
+                    left: -23px;
+                    bottom: 81px;
+                }
+
+                @media (min-width:1920px) {
+                    width: 114px;
+                    left: -30px;
+                    bottom: 121px;
+                }
+            }
+
+            .details-header-heading {
+                font-family: "inter", sans-serif;
+                color: $heading-color;
+                font-size: 33px;
+
+                @media (min-width:768px) {
+                    padding-top: 55px;
+                    font-size: 36px;
+                }
+
+                @media (min-width:1024px) {
+                    font-size: 50px;
+                }
+
+                @media (min-width:1440px) {
+                    font-size: 60px;
+                }
+
+                @media (min-width:1920px) {
+                    padding-top: 0;
+                    font-size: 90px;
+                }
+            }
+
+            .details-header-suffix {
+                width: 128px;
+                left: 93px;
+                top: 83px;
+
+                @media (min-width:768px) {
+                    left: 260px;
+                    top: 92px;
+                }
+
+                @media (min-width:1024px) {
+                    width: 152px;
+                    left: 360px;
+                    top: 113px;
+                }
+
+                @media (min-width:1440px) {
+                    width: 188px;
+                    left: 435px;
+                    top: 122px;
+                }
+
+                @media (min-width:1920px) {
+                    width: 198px;
+                    left: 644px;
+                    top: 121px;
+                }
+            }
+        }
+
+        .hero-details-para {
+            margin-top: 82px;
+            color: $text-color-7;
+            padding: 5px 20px;
+
+            @media (min-width:768px) {
+                margin-top: 26px;
+                padding: 0 37px;
+            }
+
+            @media (min-width:1024px) {
+                margin-top: 42px;
+                font-size: 18px;
+            }
+
+            @media (min-width:1440px) {
+                margin-top: 50px;
+                padding: 0 0 0 60px;
+            }
+
+            @media (min-width:1920px) {
+                margin-top: 65px;
+                font-size: 19px;
+                width: 860px;
+            }
+
+        }
+
+        .hero-details-buttons {
+            gap: 16px;
+
+            @media (min-width:768px) {
+                padding: 10px 40px;
+            }
+
+            @media (min-width:1024px) {
+                padding: 30px 40px;
+                gap: 30px;
+            }
+
+            @media (min-width:1440px) {
+                padding: 30px 58px;
+            }
+
+            @media (min-width:1920px) {
+                padding: 65px 57px;
+                gap: 69px;
+            }
+
+            .details-buttons-started {
+                background-color: $yellow-color;
+                padding: 10px 20px;
+                border-radius: 4px;
+                border: none;
+
+                &:hover {
+                    box-shadow: none;
+                    outline: none;
+                    background-color: $yellow-color-hover;
+                }
+
+                @media (min-width:1024px) {
+                    font-size: 20px;
+                    padding: 13px 22px;
+                }
+
+                @media (min-width:1440px) {
+                    padding: 16px 30px;
+                }
+
+                @media (min-width:1920px) {
+                    font-size: 24px;
+                    padding: 20px 40px;
+                }
+            }
+
+            .details-buttons-tour {
+                border: none;
+
+                &:hover {
+                    box-shadow: none;
+                    outline: none;
+                    scale: 1.01;
+                    transition: all 0.15s ease-in-out 0.15s;
+                }
+
+                .buttons-tour-image {
+                    border: none;
+                    width: 120px;
+
+                    &:hover {
+                        box-shadow: none;
+                        outline: none;
+                    }
+
+                    @media (min-width:1024px) {
+                        width: 141px;
+                    }
+
+                    @media (min-width:1920px) {
+                        width: 172px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-content {
+        @media (min-width:768px) {
+            width: 48%;
+            position: relative;
+        }
+
+        .content-image {
+            width: 225px;
+
+            @media (min-width:768px) {
+                width: 348px;
+            }
+
+            @media (min-width:1024px) {
+                width: 446px;
+            }
+
+            @media (min-width:1440px) {
+                width: 570px;
+            }
+
+            @media (min-width:1920px) {
+                width: 762px;
+            }
+        }
+
+        .content-card {
+            width: 180px;
+            padding: 10px;
+            border-radius: 1.58px;
+            box-shadow: 0px 3.17px 52.3px 0px rgba(0, 0, 0, 0.11);
+            backdrop-filter: blur(28.53px);
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            @media (min-width:768px) {
+                position: absolute;
+                bottom: -27px;
+                left: -35px;
+            }
+
+            @media (min-width:1024px) {
+                bottom: 10px;
+                left: -76px;
+            }
+
+            @media (min-width:1440px) {
+                width: 207px;
+                padding: 17px 25px 17px 10px;
+                bottom: 19px;
+                left: -79px;
+            }
+
+            @media (min-width:1920px) {
+                width: 212px;
+                padding: 18px 31px 12px 14px;
+                bottom: 68px;
+                left: -58px;
+            }
+
+            .team-card-heading {
+                font-family: "inter", sans-serif;
+
+                @media (min-width:1440px) {
+                    font-size: 18px;
+                }
+            }
+
+            .team-photo-stack {
+                padding-bottom: 52px;
+
+                .team-card-photo {
+                    width: 44px;
+
+                    &:hover {
+                        cursor: pointer;
+                        scale: 1.05;
+                        z-index: 2;
+                        transition: all 0.1s ease-in-out 0.1s;
+                    }
+
+                    @media (min-width:1440px) {
+                        width: 50px;
+                    }
+                }
+
+                .team-photo-professor {
+                    left: 0;
+                }
+
+                .team-photo-man {
+                    left: 30px;
+
+                    @media (min-width:1440px) {
+                        left: 35px;
+                    }
+                }
+
+                .team-photo-player {
+                    left: 58px;
+
+                    @media (min-width:1440px) {
+                        left: 66px;
+                    }
+                }
+
+                .team-photo-boy {
+                    left: 86px;
+
+                    @media (min-width:1440px) {
+                        left: 97px;
+                    }
+                }
+
+                .team-photo-plus {
+                    left: 116px;
+
+                    &:hover {
+                        cursor: pointer;
+                        scale: 1.05;
+                        transition: all 0.1s ease-in-out 0.1s;
+                    }
+
+                    @media (min-width:1440px) {
+                        left: 129px;
+                    }
+                }
+            }
+        }
+    }
+}

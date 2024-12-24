@@ -1,0 +1,127 @@
+// BUSINESS section styles
+.business-section {
+    background-color: $bg-gray-color;
+    background-image: url(../images/design/businessBackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width:768px) {
+        padding: 48px;
+    }
+
+    @media (min-width:1024px) {
+        margin-top: 135px;
+    }
+
+    @media (min-width:1920px) {
+        padding: 98px 333px;
+    }
+
+    &-container {
+        @media (min-width:768px) {
+            width: 676px;
+        }
+
+        @media (min-width:1024px) {
+            width: 934px;
+        }
+
+        @media (min-width:1440px) {
+            margin: 30px 0;
+            width: 1200px;
+        }
+
+        @media (min-width:1920px) {
+            width: 1256px;
+        }
+
+        .container-content {
+            &-header {
+                font-size: 30px;
+                color: $heading-color-dark ;
+                width: 320px;
+
+                &-part {
+                    color: $violet-color;
+                }
+
+                @media (min-width:1024px) {
+                    width: 400px;
+                    font-size: 40px;
+                }
+
+                @media (min-width:1440px) {
+                    font-size: 45px;
+                    width: 520px;
+                }
+
+                @media (min-width:1920px) {
+                    font-size: 55px;
+                    width: 543px;
+                }
+            }
+
+            &-para {
+                width: 320px;
+                color: $text-color-8;
+                padding: 15px 36px;
+                line-height: 30px;
+
+                @media (min-width:768px) {
+                    padding: 15px 0;
+                }
+
+                @media (min-width:1440px) {
+                    width: 472px;
+                    padding: 0 0 20px;
+                }
+
+                @media (min-width:1920px) {
+                    font-size: 17px;
+                    width: 601px;
+                }
+            }
+
+            &-button {
+                background-color: $yellow-color;
+                border-radius: 4px;
+                color: $heading-color;
+                padding: 10px 20px;
+                border: none;
+
+                &:hover {
+                    box-shadow: none;
+                    outline: none;
+                    background-color: $yellow-color-hover;
+                }
+
+                @media (min-width:1024px) {
+                    font-size: 18px;
+                }
+
+                @media (min-width:1920px) {
+                    font-size: 24px;
+                    padding: 20px 40px;
+                }
+            }
+        }
+
+        .container-image {
+            @media (min-width:1024px) {
+                width: 470px;
+            }
+
+            @media (min-width:1024px) {
+                width: 490px;
+            }
+
+            @media (min-width:1440px) {
+                width: 550px;
+            }
+
+            @media (min-width:1920px) {
+                width: 607px;
+            }
+        }
+    }
+}

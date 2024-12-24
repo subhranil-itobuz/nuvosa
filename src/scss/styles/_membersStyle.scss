@@ -1,0 +1,114 @@
+//Members section styles
+.members-section {
+  padding: 40px 0 80px;
+
+  &-header {
+    max-width: 688px;
+
+    @media (min-width:1920px) {
+      max-width: 765px;
+    }
+
+    &-heading {
+      font-size: 30px;
+      color: $heading-color;
+
+      @media (min-width:1024px) {
+        font-size: 40px;
+      }
+
+      @media (min-width:1440px) {
+        font-size: 45px;
+      }
+
+      @media (min-width:1920px) {
+        font-size: 55px;
+      }
+
+      &-part {
+        color: $violet-color;
+      }
+    }
+
+
+    &-text {
+      color: $text-color-8;
+
+      @media (min-width:1920px) {
+        font-size: 17px;
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+    }
+  }
+
+  &-container {
+    max-width: 1260px;
+
+    .container-card {
+      border: 1px solid #EFEFEF;
+      width: 280px;
+
+      &:hover {
+        cursor: pointer;
+        border: 1px solid white;
+        box-shadow: 0 34px 50px -17px #02160510;
+        transition: all 0.2s ease-in-out 0.2s;
+      }
+
+      @media (min-width:1024px) {
+        width: 230px;
+      }
+
+      @media (min-width:1440px) {
+        width: 265px;
+      }
+
+      @media (min-width:1920px) {
+        width: 269px;
+        margin: 0 10px;
+      }
+
+      &-image {
+        width: 95px;
+
+        @media (min-width:1440px) {
+          width: 110px;
+        }
+      }
+
+      &-body {
+        &-title {
+          color: $heading-color;
+
+          &:hover {
+            color: $violet-color;
+            transition: all 0.2s ease-in-out 0.2s;
+          }
+
+          @media (min-width:1440px) {
+            font-size: 22px;
+          }
+        }
+
+        &-text {
+          font-size: 15px;
+          color: #A3A2A2;
+        }
+      }
+
+      &-buttons {
+        &-icon {
+          &:hover {
+            filter: invert(53%) sepia(24%) saturate(6909%) hue-rotate(214deg) brightness(96%) contrast(96%);
+            transition: all 0.2s ease-in-out 0.2s;
+          }
+
+          @media (min-width:1440px) {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}

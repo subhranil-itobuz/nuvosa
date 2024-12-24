@@ -1,0 +1,101 @@
+//MANAGEMENT section styles 
+.management-section {
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    @media (min-width:768px) {
+        margin-top: 70px;
+    }
+
+    @media (min-width:1440px) {
+        margin-top: 80px;
+    }
+
+    @media (min-width:1920px) {
+        justify-content: space-around;
+        margin-top: 110px;
+        margin-bottom: 75px;
+    }
+
+    .management-card {
+        box-shadow: 0px 17px 33px -14px #02160512;
+
+        &:hover {
+            cursor: pointer;
+            scale: 1.02;
+            box-shadow: 0px 17px 33px -14px #02160580;
+            transition: all 0.3s ease-in-out 0.3s;
+        }
+
+        @media (min-width:768px) {
+            width: 350px;
+        }
+
+        @media (min-width:1440px) {
+            width: 420px;
+            margin: 0 20px;
+        }
+        
+        @media (min-width:1920px) {
+            width: 513px;
+            margin: 0 48px;
+        }
+
+        .management-header {
+            .management-header-icon {
+                width: 75px;
+
+                @media (min-width:768px) {
+                    width: 90px;
+                }
+
+                @media (min-width:1440px) {
+                    width: 110px;
+                }
+
+                @media (min-width:1920px) {
+                    width: 130px;
+                }
+            }
+
+            .management-header-title {
+                font-weight: 300;
+                color: $heading-color;
+
+                @media (min-width:1440px) {
+                    font-size: 35px;
+                }
+
+                @media (min-width:1920px) {
+                    font-size: 38px;
+                    padding-right: 30px;
+                }
+            }
+        }
+
+        .management-content {
+            font-weight: 200;
+            color: $text-color-8;
+
+            @media (min-width:1920px) {
+                font-size: 17px;
+            }
+        }
+
+        .management-button {
+            border: none;
+
+            &:hover {
+                box-shadow: none;
+                outline: none;
+            }
+
+            .management-button-image {
+                &:hover {
+                    scale: 1.2;
+                    transition: all 0.15s ease-in-out 0.15s;
+                }
+            }
+        }
+    }
+}

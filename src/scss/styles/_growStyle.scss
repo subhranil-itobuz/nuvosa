@@ -1,0 +1,91 @@
+// GROW section styles
+.grow-section {
+    @media (min-width:1440px) {
+        margin: 25px 0;
+    }
+
+    @media (min-width:1920px) {
+        padding: 52px 330px 36px;
+    }
+
+    &-orange-dot {
+        left: 28px;
+        top: 75px;
+
+        @media (min-width:768px) {
+            left: 317px;
+        }
+
+        @media (min-width:1440px) {
+            left: 484px;
+            top: 45px;
+        }
+
+        @media (min-width:1920px) {
+            left: 661px;
+            top: 99px;
+        }
+    }
+
+    &-violet-rectangle {
+        right: 30px;
+        top: 40px;
+    }
+
+    &-container {
+        .container-card {
+            width: 300px;
+
+            &:hover {
+                scale: 1.01;
+                cursor: pointer;
+                box-shadow: 0 34px 50px -17px #02160514;
+                transition: all 0.15s ease-in-out 0.15s;
+            }
+
+            @media (min-width:1024px) {
+                width: 320px;
+            }
+
+            @media (min-width:1440px) {
+                width: 340px;
+            }
+
+            @media (min-width:1920px) {
+                width: 370px;
+            }
+
+            &-logo {
+                width: 50px;
+
+                @media (min-width:1920px) {
+                    width: 71px;
+                }
+            }
+
+            &-body {
+                &-header {
+                    color: $heading-color;
+
+                    @media (min-width:1920px) {
+                        font-size: 22px;
+                    }
+                }
+
+                &-text {
+                    color: $text-color-8;
+                    width: 280px;
+
+                    @media (min-width:1920px) {
+                        font-size: 17px;
+                    }
+                }
+
+                &-button {
+                    font-size: 14px;
+                    color: $violet-color;
+                }
+            }
+        }
+    }
+}

@@ -11,9 +11,9 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
+.page-body {
     max-width: 1920px;
-    margin: auto !important;
+    margin: auto;
 }
 
 @import 'bootstrap/scss/bootstrap.scss';

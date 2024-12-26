@@ -62,12 +62,8 @@
 
             &-para {
                 color: $text-color-8;
-                padding: 15px 36px;
+                padding: 15px 0;
                 line-height: 30px;
-
-                @media (min-width:768px) {
-                    padding: 15px 0;
-                }
 
                 @media (min-width:1440px) {
                     width: 472px;

@@ -1,3 +1,25 @@
+// expert header animation
+@mixin header-expert-animation {
+  animation: rotate-header;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+  @keyframes rotate-header {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(7deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
 // green-rectangle animation
 @mixin green-rectangle-animation {
   animation: move-green;
@@ -64,6 +86,7 @@
   }
 }
 
+// hero-photo animation
 @mixin hero-photo-animation {
   animation: move-photo;
   animation-duration: 5s;
@@ -80,6 +103,93 @@
     }
     100% {
       transform: translateX(20px) translateY(-10px);
+    }
+  }
+}
+
+// card faded in animation
+@mixin card-fade-animation {
+  animation: card-fade;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+
+  @keyframes card-fade {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+// background-image moving
+@mixin background-moving-animation {
+  animation: bg-moving;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+  @keyframes bg-moving {
+    0% {
+      background-position: 15px;
+    }
+
+    50% {
+      background-position: 0px;
+    }
+
+    100% {
+      background-position: 15px;
+    }
+  }
+}
+
+//image scaling
+@mixin image-scaling-animation {
+  animation: image-scaling;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+  @keyframes image-scaling {
+    0% {
+      scale: 1.05;
+    }
+
+    50% {
+      scale: 1.00;
+    }
+
+    100% {
+      scale: 1.05;
+    }
+  }
+}
+
+//dot scaling animation
+@mixin dot-scaling-animation {
+  animation: dot-scaling;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+  @keyframes dot-scaling {
+    0% {
+      scale: 2;
+    }
+
+    50% {
+      scale: 1;
+    }
+
+    100% {
+      scale: 2;
     }
   }
 }

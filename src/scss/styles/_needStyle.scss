@@ -1,8 +1,12 @@
 //NEED section styles
+@use '../mixins';
+
 .need-section {
   &-green-rectangle {
     top: 5px;
     left: 32px;
+
+    @include mixins.green-rectangle-animation;
 
     @media (min-width: 768px) {
       left: 150px;
@@ -17,6 +21,8 @@
   &-orange-dot {
     top: 153px;
     left: 250px;
+
+    @include mixins.orange-dot-animation;
 
     @media (min-width: 768px) {
       left: 678px;
@@ -40,6 +46,8 @@
 
   &-image {
     width: 270px;
+
+    @include mixins.image-scaling-animation;
 
     @media (min-width: 768px) {
       width: 380px;
@@ -110,6 +118,8 @@
       .container-card {
         width: 310px;
         border-radius: 4px;
+
+        @include mixins.card-fade-animation;
 
         &:hover {
           cursor: pointer;

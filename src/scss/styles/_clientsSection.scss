@@ -1,8 +1,12 @@
 // CLIENTS section styles
+@use '../mixins';
+
 .clients-section {
   &-orange-dot {
     left: 44px;
     top: -18px;
+
+    @include mixins.orange-dot-animation;
 
     @media (min-width:768px) {
       left: 79px;
@@ -23,6 +27,8 @@
   &-violet-rectangle {
     right: 70px;
     top: -64px;
+
+    @include mixins.violet-rectangle-animation;
 
     @media (min-width:1920px) {
       right: 151px;
@@ -77,6 +83,8 @@
           max-width: 569px;
           padding: 20px;
           border: 1px solid #efefef;
+
+          @include mixins.card-fade-animation;
 
           &:hover {
             cursor: pointer;

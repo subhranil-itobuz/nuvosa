@@ -1,4 +1,6 @@
 // OPTIMIZING section styles
+@use "../mixins";
+
 .optimizing-section {
     @media (min-width:1024px) {
         padding: 30px 32px;
@@ -67,6 +69,8 @@
             background: transparent;
             padding: 30px 24px 40px; 
             gap: 80px;
+
+            @include mixins.card-fade-animation;
 
             &:hover {
                 cursor: pointer;

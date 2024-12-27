@@ -1,4 +1,6 @@
 //MANAGEMENT section styles 
+@use '../mixins';
+
 .management-section {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -19,6 +21,8 @@
 
     .management-card {
         box-shadow: 0px 17px 33px -14px #02160512;
+
+        @include mixins.card-fade-animation;
 
         &:hover {
             cursor: pointer;

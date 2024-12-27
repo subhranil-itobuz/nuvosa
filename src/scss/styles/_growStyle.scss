@@ -1,4 +1,6 @@
 // GROW section styles
+@use '../mixins';
+
 .grow-section {
     @media (min-width:1440px) {
         margin: 25px 0;
@@ -11,6 +13,8 @@
     &-orange-dot {
         left: 28px;
         top: 75px;
+
+        @include mixins.orange-dot-animation;
 
         @media (min-width:768px) {
             left: 317px;
@@ -30,11 +34,15 @@
     &-violet-rectangle {
         right: 30px;
         top: 40px;
+
+        @include mixins.violet-rectangle-animation;
     }
 
     &-container {
         .container-card {
             width: 300px;
+
+            @include mixins.card-fade-animation;
 
             &:hover {
                 scale: 1.01;

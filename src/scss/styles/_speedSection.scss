@@ -1,4 +1,6 @@
 //SPEED section styles
+@use '../mixins';
+
 .speed-section {
     @media (min-width:1024px) {
         padding: 10px 33px;
@@ -11,6 +13,8 @@
     &-orange-dot {
         left: 20px;
         top: 10px;
+
+        @include mixins.orange-dot-animation;
 
         @media (min-width:1024px) {
             left: 50px;
@@ -32,6 +36,8 @@
         top: 30px;
         right: 23px;
 
+        @include mixins.violet-rectangle-animation;
+
         @media (min-width:1024px) {
             top: 0px;
             right: 103px;
@@ -41,6 +47,8 @@
     &-green-rectangle {
         bottom: -35px;
         right: 50px;
+
+        @include mixins.green-rectangle-animation;
 
         @media (min-width:1024px) {
             bottom: -38px;
@@ -150,6 +158,8 @@
 
     &-image {
         width: 280px;
+
+        @include mixins.image-scaling-animation;
 
         @media (min-width:1024px) {
             width: 342px;

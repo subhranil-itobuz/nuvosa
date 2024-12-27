@@ -1,4 +1,6 @@
 // CHOOSE section styles
+@use '../mixins';
+
 .choose-section {
     background-color: $bg-gray-color;
 
@@ -13,6 +15,8 @@
 
     &-violet-rectangle {
         top: -14px;
+
+        @include mixins.violet-rectangle-animation;
 
         @media (min-width:1024px) {
             left: 190px;
@@ -73,6 +77,8 @@
 
         .container-card {
             width: 300px;
+
+            @include mixins.card-fade-animation;
 
             &:hover {
                 cursor: pointer;

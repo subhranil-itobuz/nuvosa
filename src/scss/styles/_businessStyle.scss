@@ -1,9 +1,13 @@
 // BUSINESS section styles
+@use '../mixins';
+
 .business-section {
     background-color: $bg-gray-color;
     background-image: url(../images/design/businessBackground.png);
     background-repeat: no-repeat;
     background-position: center;
+
+    @include mixins.background-moving-animation;
 
     @media (min-width:768px) {
         padding: 48px;

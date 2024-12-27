@@ -1,4 +1,6 @@
 //NUMBERS section styles
+@use '../mixins';
+
 .numbers-section {
     &-container {
         border: 1px solid #E1E1E1;
@@ -24,6 +26,9 @@
         .container-card {
             margin: 20px 0;
             width: 120px;
+
+
+            @include mixins.card-fade-animation;
 
             @media (min-width:768px) {
                 width: 160px;
@@ -64,5 +69,8 @@
             }
         }
 
+        .container-color-dot {
+            @include mixins.dot-scaling-animation;
+        }
     }
 }

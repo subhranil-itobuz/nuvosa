@@ -1,4 +1,6 @@
 //Members section styles
+@use '../mixins';
+
 .members-section {
   padding: 40px 0 80px;
 
@@ -30,7 +32,6 @@
       }
     }
 
-
     &-text {
       color: $text-color-8;
 
@@ -48,6 +49,8 @@
     .container-card {
       border: 1px solid #EFEFEF;
       width: 280px;
+
+      @include mixins.card-fade-animation;
 
       &:hover {
         cursor: pointer;

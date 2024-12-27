@@ -1,14 +1,20 @@
 // PLANS section styles
+@use '../mixins';
+
 .plans-section {
   background-color: $bg-gray-color;
 
   &-violet-rectangle {
     left: 30px;
+
+    @include mixins.violet-rectangle-animation;
   }
 
   &-green-rectangle {
     bottom: -38px;
     left: 135px;
+
+    @include mixins.green-rectangle-animation;
 
     @media (min-width: 1440px) {
       left: 285px;
@@ -52,6 +58,8 @@
       border-radius: 4px;
       width: 310px;
       background-color: white;
+
+      @include mixins.card-fade-animation;
 
       &:hover {
         cursor: pointer;

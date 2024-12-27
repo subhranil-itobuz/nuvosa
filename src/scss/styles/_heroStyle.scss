@@ -1,4 +1,6 @@
 // HERO section styles
+@use '../mixins';
+
 .hero-section {
   @media (min-width: 1440px) {
     margin-top: 40px;
@@ -29,6 +31,8 @@
       top: -308px;
       left: 21px;
 
+      @include mixins.green-rectangle-animation;
+
       @media (min-width: 768px) {
         top: 12px;
       }
@@ -46,6 +50,8 @@
       right: 82px;
       top: -16px;
 
+      @include mixins.orange-dot-animation;
+
       @media (min-width: 1440px) {
         top: 8px;
       }
@@ -58,6 +64,8 @@
     .hero-details-violet-rectangle {
       left: 54px;
       top: -166px;
+
+      @include mixins.violet-rectangle-animation;
 
       @media (min-width: 768px) {
         left: 298px;
@@ -293,6 +301,8 @@
     .content-image {
       width: 225px;
 
+      @include mixins.hero-photo-animation;
+
       @media (min-width: 768px) {
         width: 348px;
       }
@@ -414,69 +424,6 @@
           }
         }
       }
-    }
-  }
-}
-
-.green-rectangle-animation {
-  animation: move-green;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 3;
-
-  @keyframes move-green {
-    0% {
-      transform: translateX(50px);
-    }
-
-    50% {
-      transform: translateX(0px);
-    }
-
-    100% {
-      transform: translateX(50px);
-    }
-  }
-}
-
-.orange-dot-animation {
-  animation: move-orange;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 3;
-
-  @keyframes move-orange {
-    0% {
-      transform: translateY(50px);
-    }
-
-    50% {
-      transform: translateY(0);
-    }
-
-    100% {
-      transform: translateY(50px);
-    }
-  }
-}
-
-.violet-rectangle-animation {
-  animation: move-violet;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 3;
-
-  @keyframes move-violet {
-    0% {
-      transform: translateX(50px);
-    }
-
-    50% {
-      transform: translateX(0px);
-    }
-
-    100% {
-      transform: translateX(50px);
     }
   }
 }

@@ -1,0 +1,85 @@
+// green-rectangle animation
+@mixin green-rectangle-animation {
+  animation: move-green;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+  @keyframes move-green {
+    0% {
+      transform: translateX(50px);
+    }
+
+    50% {
+      transform: translateX(0px);
+    }
+
+    100% {
+      transform: translateX(50px);
+    }
+  }
+}
+
+// violet-rectangle-animation
+@mixin violet-rectangle-animation {
+  animation: move-violet;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+  @keyframes move-violet {
+    0% {
+      transform: translateX(30px);
+    }
+
+    50% {
+      transform: translateX(0px);
+    }
+
+    100% {
+      transform: translateX(30px);
+    }
+  }
+}
+
+// orange-dot animation
+@mixin orange-dot-animation {
+  animation: move-orange;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+  @keyframes move-orange {
+    0% {
+      transform: translateY(50px);
+    }
+
+    50% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(50px);
+    }
+  }
+}
+
+@mixin hero-photo-animation {
+  animation: move-photo;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+  @keyframes move-photo {
+    0% {
+      transform: translateX(20px) translateY(-10px);
+    }
+
+    50% {
+      transform: translateX(0px) translateY(0px);
+    }
+    100% {
+      transform: translateX(20px) translateY(-10px);
+    }
+  }
+}
